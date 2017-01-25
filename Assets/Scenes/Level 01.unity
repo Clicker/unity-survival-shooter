@@ -352,6 +352,29 @@ CanvasRenderer:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 487012869}
+--- !u!1 &783723049 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 1643673794631808, guid: 8cd00b144bdb0d64a9ced9dc979dfa1d,
+    type: 2}
+  m_PrefabInternal: {fileID: 1341593405}
+--- !u!114 &783723050
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 783723049}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 544f2064df03e95419b4a5147c506b08, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  StartingHealth: 100
+  CurrentHealth: 0
+  HealthSlider: {fileID: 912108751}
+  DamageImage: {fileID: 1846709540}
+  DeathClip: {fileID: 8300000, guid: d36a393bca4582043982db9089e1694f, type: 3}
+  FlashSpeed: 5
+  FlashColour: {r: 1, g: 0, b: 0, a: 0.291}
 --- !u!1 &820458533
 GameObject:
   m_ObjectHideFlags: 0
@@ -627,6 +650,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 94f6618a0da65fa45b24d5105d5d8422, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &892660417
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 892660410}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e15099f5ee559584089d5851df572def, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  TimeBetweenAttacks: 0.5
+  AttackDamage: 10
 --- !u!1 &912108749
 GameObject:
   m_ObjectHideFlags: 0

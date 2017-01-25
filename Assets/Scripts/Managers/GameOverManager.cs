@@ -1,24 +1,24 @@
 ﻿using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class GameOverManager : MonoBehaviour
 {
-    public PlayerHealth playerHealth;
+    public PlayerHealth PlayerHealth;
 
-
-    Animator anim;
+    private Animator _anim;
 
 
     void Awake()
     {
-        anim = GetComponent<Animator>();
+        _anim = GetComponent<Animator>();
     }
 
 
     void Update()
     {
-        if (playerHealth.CurrentHealth <= 0)
+        if (PlayerHealth.CurrentHealth <= 0)
         {
-            anim.SetTrigger("GameOver");
+            _anim.SetTrigger("GameOver");
         }
     }
 }

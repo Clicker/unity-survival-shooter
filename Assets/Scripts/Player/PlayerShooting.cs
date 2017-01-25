@@ -5,6 +5,7 @@ public class PlayerShooting : MonoBehaviour
     public int DamagePerShot = 20;
     public float TimeBetweenBullets = 0.15f;
     public float Range = 100f;
+    public Light FaceLight;
 
 
     float _timer;
@@ -48,6 +49,7 @@ public class PlayerShooting : MonoBehaviour
     {
         _gunLine.enabled = false;
         _gunLight.enabled = false;
+        FaceLight.enabled = false;
     }
 
 
@@ -58,6 +60,7 @@ public class PlayerShooting : MonoBehaviour
         _gunAudio.Play ();
 
         _gunLight.enabled = true;
+        FaceLight.enabled = true;
 
         _gunParticles.Stop ();
         _gunParticles.Play ();
